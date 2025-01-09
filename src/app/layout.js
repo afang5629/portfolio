@@ -23,12 +23,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex-nowrap bg-sky-300 p-5 text-right">
-          <Link href="/">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link href="/contact">Contact</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link href="/about">About Me</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link href="/games">Games I like</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <Link href="/blog">My Blog</Link>
+        <div className="flex flex-row flex-nowrap bg-sky-300 w-full gap-2 justify-end">
+          <Link className="border border-1 border-black p-3 w-fit text-center" href="/">Home</Link>
+          <Link className="border border-1 border-black p-3 w-fit text-center" href="/contact">Contact</Link>
+          <Link className="border border-1 border-black p-3 w-fit text-center" href="/about">About Me</Link>
+          <Link className="border border-1 border-black p-3 w-fit text-center" href="/games">Games I like</Link>
         </div>
         {children}
       </body>
