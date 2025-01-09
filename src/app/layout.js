@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
           <Link className="border border-1 border-black p-3 w-fit text-center" href="/contact">Contact</Link>
           <Link className="border border-1 border-black p-3 w-fit text-center" href="/about">About Me</Link>
           <Link className="border border-1 border-black p-3 w-fit text-center" href="/games">Games I like</Link>
+          <Link className="border border-1 border-black p-3 w-fit text-center" href="/blog">Blog</Link>
         </div>
         {children}
       </body>
